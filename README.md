@@ -32,3 +32,5 @@ The inputfile is a preprocessed version of the FASTQ files (essentially just the
 # Runtime
 
 In the average case, the runtime should be O(nlogn). The two major time consuming steps are sorting the sequences into hashmaps w/ singly linked lists (average O(nlogn)) and a mergesort (average/worst O(nlogn)). Worst case of hashmap w/ singly linked lists is O(n^2) since no re-hashing method was built in. However, it was incredibly unlikely to be of significant impact as the index uses a modulo value of about ~1 million (thus this uses fairly large spatial complexity) and the sequence to key method creates absolutely unique keys (for library size <= 19) and reasonably unique keys (for library size > 19). Moreover, the MiSeq's upper limit on sequences is ~25 million sequences or so (usually with many duplicates), thus we expect no more than ~25 sequences in any given linked list in the average case.
+
+I typically was able to run 10-15 million sequences in around 30 seconds, but this will obviously vary from system to system.
