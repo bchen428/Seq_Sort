@@ -1,0 +1,23 @@
+ideal perfect sequence (0 errors, normal library length)
+a single error in first nucleotide of tail
+a single error in the last nucleotide of head
+a single error in the first nucleotide of head
+ideal sequence with different library
+two errors in last two nucleotides of head
+three errors in last two nucleotides of head
+four errors in all four nucleotides of head
+ideal sequence with different library
+error in first nucleotide of tail
+error in first two nucleotides of tail
+error in first three nucleotides of tail
+four errors in all nucleotides of tail
+ideal sequence, truncated
+ideal sequence, nothing after tail
+two errors, one in last of head, one in first of tail
+three errors, one in first of head, two in last two of head
+three errors, one in first of head, one in last of head, one in first of tail
+librarylength of 16
+librarylength of 14 with 1 error in last of head
+
+
+NOTE: This test data assumes 0 offset, library length 15, head "ACAC", tail "CACA"
